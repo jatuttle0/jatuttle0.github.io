@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+#logo {
+	position:absolute;
+	left:0;
+	top:0;
+}
+.btn {
+	padding-top: 3px;
+}

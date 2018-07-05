@@ -2,10 +2,18 @@
 /* CSS Document */
 
 #logo {
-	position:absolute;
-	left:0;
-	top:0;
+	padding-right: 53px;
 }
 .btn {
 	padding-top: 3px;
 }
+.banner {
+	background-image: url("jumbotron.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+/*.jumbo-sub {
+	background-color: #E0DAFE;
+}*/

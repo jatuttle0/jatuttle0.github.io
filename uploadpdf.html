@@ -47,6 +47,7 @@
 
 		<!-- Input new PDF -->
         <div class="input-group mb-3">
+			<button class="btn btn-secondary" id="btn-back" type="button">Back</button>
 
 			<div class="input-group-prepend">
 				<button id="drop-type"
@@ -164,6 +165,9 @@
 			});
 			$(".dropdown-item").click(function() {
 				$("#drop-type").html($(this).html());
+			});
+			$("#btn-back").click(function() {
+				window.history.back();
 			});
 
 		});

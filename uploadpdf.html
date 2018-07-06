@@ -44,16 +44,36 @@
 		</div>
 
 
-        <!-- Recent Files -->
+		<!-- Recent Files -->
+		<div class="container">
+
+		</div>
 
         <!-- Input new PDF -->
         <div class="input-group mb-3">
+
+			<div class="input-group-prepend">
+				<button id="drop-type"
+						class="btn btn-outline-secondary dropdown-toggle" 
+						type="button" 
+						data-toggle="dropdown" 
+						aria-haspopup="true" 
+						aria-expanded="false">Type</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Invoice</a>
+					<a class="dropdown-item" href="#">Contract</a>
+					<a class="dropdown-item" href="#">Notice</a>
+					<div role="separator" class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">Other</a>
+				</div>
+			</div>
+
             <div class="custom-file">
                 <input type="file" class="custom-file-input" id="form-pdf">
                 <label class="custom-file-label" for="form-pdf">Choose PDF</label>
             </div>
             <div class="input-group-append">
-                <span class="input-group-text" id="btn-upload" href="#">Upload</span>
+					<button id="btn-upload"class="btn btn-primary" type="button">Upload</button>
             </div>
 		</div>
 		
@@ -111,6 +131,9 @@
 					$("#ab2").removeClass("btn-primary");
 					$("#ab2").addClass("btn-secondary");
 				}
+			});
+			$(".dropdown-item").click(function() {
+				$("#drop-type").html($(this).html());
 			});
 		});
 

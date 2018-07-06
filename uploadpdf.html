@@ -23,7 +23,7 @@
 			<div class="masthead">
 				<nav class="navbar navbar-light bg-faded rounded mb-3">
 					<ul class="nav justify-content-center">
-						<li class="nav-item">
+						<li class="navbar-brand">
 							<img class="nav-link" id="logo" src="https://i.imgur.com/jF6ULfq.png"/>
 						</li>
 						<li class="nav-item">
@@ -46,15 +46,15 @@
 
 		<!-- Recent Files -->
 		<div class="container">
-
+			
 		</div>
 
-        <!-- Input new PDF -->
+		<!-- Input new PDF -->
         <div class="input-group mb-3">
 
 			<div class="input-group-prepend">
 				<button id="drop-type"
-						class="btn btn-outline-secondary dropdown-toggle" 
+						class="btn btn-outline-primary dropdown-toggle" 
 						type="button" 
 						data-toggle="dropdown" 
 						aria-haspopup="true" 
@@ -73,13 +73,18 @@
                 <label class="custom-file-label" for="form-pdf">Choose PDF</label>
             </div>
             <div class="input-group-append">
-					<button id="btn-upload"class="btn btn-primary" type="button">Upload</button>
+				<button id="btn-upload" 
+						class="btn btn-outline-primary"
+						type="button"
+						target="#modal">Upload</button>
             </div>
 		</div>
 		
 		<!-- Text about what you're doing -->
 
 		
+	
+
 		<!-- Jumbotron -->
 		<div class="jumbotron banner">
 		  <h1>Data Transfer Recognition Application®</h1>
@@ -106,17 +111,7 @@
 	<script type="text/javascript">
 		
 		$(function() {
-			$('#login-submit').click(function() {
-				$(location).attr('href', 'landing.html');
-			});
 			
-			$('#login-forgot').click(function() {
-				console.log("Forgot button pushed");
-				alert("What am I, MIS?");
-			});
-			$('#admin-button').click(function() {
-				alert("You do not have access to this section.");
-			});
 			$("#admin-view").click(function() {
 				if ($(this).is(':checked')) {
 					$("#admin-nav").removeClass("disabled");
@@ -135,6 +130,7 @@
 			$(".dropdown-item").click(function() {
 				$("#drop-type").html($(this).html());
 			});
+			
 		});
 
 				

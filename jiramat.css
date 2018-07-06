@@ -14,3 +14,7 @@
     background-attachment: fixed;
     background-position: center;
 }
+.nav-item {
+    padding-top: 14px;
+    font-size: 18pt;
+}

@@ -52,7 +52,7 @@
 					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
 					<p>
 						<a class="btn btn-primary" href="#" role="button">View &raquo;</a>
-						<a class="btn btn-info" href="#" role="button">New &raquo;</a>
+						<a class="btn btn-info" href="uploadpdf.html" role="button">New &raquo;</a>
 					</p>
 				</div>
 				<div class="col-lg-3">
@@ -109,9 +109,7 @@
 		
 		$(function() {
 			$('#login-submit').click(function() {
-				alert("Submit pushed");
-				$(location).attr('href', '/landing.html');
-				
+				$(location).attr('href', 'landing.html');
 			});
 			
 			$('#login-forgot').click(function() {
@@ -127,7 +125,7 @@
 					$("#ab1").addClass("btn-primary");
 					$("#ab1").removeClass("btn-secondary");
 					$("#ab2").addClass("btn-primary");
-					$("#ab2").removeClass("btn-secondary");
+					$("#ab1").removeClass("btn-secondary");
 				} else {
 					$("#admin-nav").addClass("disabled");
 					$("#ab1").removeClass("btn-primary");
@@ -136,8 +134,6 @@
 					$("#ab2").addClass("btn-secondary");
 				}
 			});
-
-
 		});
 
 				

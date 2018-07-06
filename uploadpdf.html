@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	
+  	<link rel="stylesheet" href="jiramat.css"/>
+
+	
+
+	<title>JIRAMAT - DTRA®</title>
+  </head>
+  
+  <body>
+	<div class="container">
+		
+		<div class="container">
+			<div class="masthead">
+				<nav class="navbar navbar-light bg-faded rounded mb-3">
+					<ul class="nav justify-content-center">
+						<li class="nav-item">
+							<img class="nav-link" id="logo" src="https://i.imgur.com/jF6ULfq.png"/>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">PDFs</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Templates</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Reports</a>
+						</li>
+						<li class="nav-item">
+							<a id="admin-nav" class="nav-link disabled" href="#">Admin</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+
+        <!-- Recent Files -->
+
+        <!-- Input new PDF -->
+        <div class="input-group mb-3">
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="form-pdf">
+                <label class="custom-file-label" for="form-pdf">Choose PDF</label>
+            </div>
+            <div class="input-group-append">
+                <span class="input-group-text" id="btn-upload" href="#">Upload</span>
+            </div>
+		</div>
+		
+		<!-- Text about what you're doing -->
+
+		
+		<!-- Jumbotron -->
+		<div class="jumbotron banner">
+		  <h1>Data Transfer Recognition Application®</h1>
+		  <p class="lead"><span class="jumbo-sub"><strong>Use this tool to read a PDF and store its contents.</strong></span></p>
+		  <p><a class="btn btn-lg btn-primary" href="#" role="button">Quick Start Guide</a></p>
+		</div>
+
+	  <!-- Site footer -->
+	  <footer class="footer">
+		<p>&copy; JIRAMAT 2018</p>
+	  </footer>
+
+	  	<div class="form-check">
+			<input class="form-check-input" type="checkbox" value="1" id="admin-view">
+			<label class="form-check-label" for="admin-view">Admin View</label>
+		</div>
+
+	</div> <!-- /container -->
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	
+	<script type="text/javascript">
+		
+		$(function() {
+			$('#login-submit').click(function() {
+				$(location).attr('href', 'landing.html');
+			});
+			
+			$('#login-forgot').click(function() {
+				console.log("Forgot button pushed");
+				alert("What am I, MIS?");
+			});
+			$('#admin-button').click(function() {
+				alert("You do not have access to this section.");
+			});
+			$("#admin-view").click(function() {
+				if ($(this).is(':checked')) {
+					$("#admin-nav").removeClass("disabled");
+					$("#ab1").addClass("btn-primary");
+					$("#ab1").removeClass("btn-secondary");
+					$("#ab2").addClass("btn-primary");
+					$("#ab1").removeClass("btn-secondary");
+				} else {
+					$("#admin-nav").addClass("disabled");
+					$("#ab1").removeClass("btn-primary");
+					$("#ab1").addClass("btn-secondary");
+					$("#ab2").removeClass("btn-primary");
+					$("#ab2").addClass("btn-secondary");
+				}
+			});
+		});
+
+				
+  	</script>
+	
+  </body>
+</html>

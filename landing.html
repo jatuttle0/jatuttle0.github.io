@@ -114,7 +114,7 @@
 			
 			$('#login-forgot').click(function() {
 				console.log("Forgot button pushed");
-				alert("What am I, MIS?");
+				alert("What am I, tech support?");
 			});
 			$('#admin-button').click(function() {
 				alert("You do not have access to this section.");
@@ -122,16 +122,18 @@
 			$("#admin-view").click(function() {
 				if ($(this).is(':checked')) {
 					$("#admin-nav").removeClass("disabled");
+					$("#ab1").removeClass("btn-secondary");
+					$("#ab2").removeClass("btn-secondary");
 					$("#ab1").addClass("btn-primary");
-					$("#ab1").removeClass("btn-secondary");
 					$("#ab2").addClass("btn-primary");
-					$("#ab1").removeClass("btn-secondary");
+					console.log("admin was checked");
 				} else {
 					$("#admin-nav").addClass("disabled");
 					$("#ab1").removeClass("btn-primary");
-					$("#ab1").addClass("btn-secondary");
 					$("#ab2").removeClass("btn-primary");
+					$("#ab1").addClass("btn-secondary");
 					$("#ab2").addClass("btn-secondary");
+					console.log("admin was un-checked");
 				}
 			});
 		});

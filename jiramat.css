@@ -18,3 +18,9 @@
     padding-top: 14px;
     font-size: 18pt;
 }
+.table td {
+    text-align: center;
+}
+.table th {
+    text-align: center;
+}

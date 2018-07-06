@@ -44,10 +44,6 @@
 			</div>
 
 
-		<!-- Recent Files -->
-		<div class="container">
-			
-		</div>
 
 		<!-- Input new PDF -->
         <div class="input-group mb-3">
@@ -76,11 +72,38 @@
 				<button id="btn-upload" 
 						class="btn btn-outline-primary"
 						type="button"
-						target="#modal">Upload</button>
+						target="#modal"
+						data-toggle="modal"
+						data-target="#theModal">Upload</button>
             </div>
 		</div>
 		
 		<!-- Text about what you're doing -->
+		
+		<!-- Modal -->
+		<div class="modal fade" 
+			 id="theModal" 
+			 tabindex="-1" 
+			 role="dialog" 
+			 aria-labelledby="exampleModalCenterTitle" 
+			 aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Upload Successful</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Click close to continue.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		
 	
@@ -139,6 +162,10 @@
 					console.log("admin was un-checked");
 				}
 			});
+			$(".dropdown-item").click(function() {
+				$("#drop-type").html($(this).html());
+			});
+
 		});
 
 				

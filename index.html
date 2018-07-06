@@ -47,7 +47,7 @@
 										<div class="form-group">
 											<div class="row">
 												<div class="col-sm-6">
-													<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-primary" value="Log In">
+													<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-primary" value="Log In" href="landing.html">
 												</div>
 												<div class="col-sm-6">
 													<input type="submit" name="login-forgot" id="login-forgot" tabindex="5" class="form-control btn btn-secondary" value="Forgot Password">
@@ -70,11 +70,6 @@
     <script type="text/javascript">
 		
 		$(function() {
-			$('#login-submit').click(function() {
-				alert("Submit pushed");
-				$(location).attr('href', 'landing.html');
-				
-			});
 			
 			$('#login-forgot').click(function() {
 				console.log("Forgot button pushed");

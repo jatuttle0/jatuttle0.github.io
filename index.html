@@ -59,7 +59,7 @@
 							</div>
 						</div>
 					</div>
-					<a href="landing.html"><button class="btn btn-outline-danger" id="thebutton">Click here to bypass github.io breaking on POST</button></a>
+					<button class="btn btn-outline-danger" id="thebutton">Click here to bypass github.io breaking on POST</button>
 				</div>
 			</div>
 		</div>
@@ -78,7 +78,7 @@
 			$('#login-forgot').click(function() {
 				preventDefault();
 				console.log("Forgot button pushed");
-				alert("What am I, tech support?");
+				alert("MIS has been dispatched via Apache helicopter");
 			});
 			$('#admin-button').click(function() {
 				alert("You do not have access to this section.");
@@ -90,19 +90,27 @@
 					$("#ab2").removeClass("btn-secondary");
 					$("#ab1").addClass("btn-primary");
 					$("#ab2").addClass("btn-primary");
-					console.log("admin was checked");
 				} else {
 					$("#admin-nav").addClass("disabled");
 					$("#ab1").removeClass("btn-primary");
 					$("#ab2").removeClass("btn-primary");
 					$("#ab1").addClass("btn-secondary");
 					$("#ab2").addClass("btn-secondary");
-					console.log("admin was un-checked");
 				}
 			});
 			$("#btn-logout").click(function() {
 				$(location).attr('href', 'index.html');
 			});
+			$("#thebutton").click(function() {
+				
+				if (!$("#username").val() || !$("#password").val()) {
+					alert("Username and password must both be completed.");
+				} else {
+					$(location).attr('href','landing.html');
+				}
+				
+			});
+			
 		});
 
 				

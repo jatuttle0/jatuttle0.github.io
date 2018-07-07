@@ -1,315 +1,411 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-	
-  	<link rel="stylesheet" href="jiramat.css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+	 crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+	 crossorigin="anonymous"></script>
 
-	
+	<link rel="stylesheet" href="jiramat.css" />
+
+
 
 	<title>JIRAMAT - DTRA®</title>
-  </head>
-  
-  <body>
+</head>
+
+<body>
 	<div class="container">
-		
+
 		<div class="container">
-				<div class="masthead">
-					<nav class="navbar navbar-light bg-faded rounded mb-3">
-						<ul class="nav justify-content-center">
-							<li class="navbar-brand">
-                                <a href="landing.html"><img class="nav-link" id="logo" src="https://i.imgur.com/jF6ULfq.png"/></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="listpdfs.html">PDFs</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="templates.html">Templates</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="reports.html">Reports</a>
-							</li>
-							<li class="nav-item">
-								<a id="admin-nav" class="nav-link disabled" href="admin.html">Admin</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
+			<div class="masthead">
+				<nav class="navbar navbar-light bg-faded rounded mb-3">
+					<ul class="nav justify-content-center">
+						<li class="navbar-brand">
+							<a href="landing.html">
+								<img class="nav-link" id="logo" src="https://i.imgur.com/jF6ULfq.png" />
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="listpdfs.html">PDFs</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="templates.html">Templates</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="reports.html">Reports</a>
+						</li>
+						<li class="nav-item">
+							<a id="admin-nav" class="nav-link disabled" href="admin.html">Admin</a>
+						</li>
+						<li class="nav-item">
+							<a id="btn-logout" class="nav-link" style="color:red;" href="index.html">Logout</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			<a href="#"><button type="button" class="btn btn-primary btn-lg">New User</button></a>
-
-			<br/><br/>
-	
-	
-			<!-- Recent Files -->
-			<h2>Recent Users</h2>
-			<table class="table table-sm">
-				<thead>
-					<tr>
-						<th scope="col">Action</th>
-						<th scope="col">Username</th>
-						<th scope="col">Profile</th>
-						<th scope="col">Manager</th>
-						<th scope="col">Last Activity Date</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th scope="row">
-							<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
-							<button class="resetpass btn btn-sm btn-success">Reset Password</button>
-						</th>
-						<td><a href="#">AbbasManekia</a></td>
-						<td><a href="#">Manager</a></td>
-						<td>-</td>
-						<td>7/5/2018 10:04 PM</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
-							<button class="resetpass btn btn-sm btn-success">Reset Password</button>
-						</th>
-						<td><a href="#">AaronRemeniuk</a></td>
-						<td><a href="#">System Administrator</a></td>
-						<td><a href="#">MasterAdmin</a></td>
-						<td>7/5/2018 4:59 PM</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
-							<button class="resetpass btn btn-sm btn-success">Reset Password</button>
-						</th>
-						<td><a href="#">IsmaeelFaridi</a></td>
-						<td><a href="#">Manager</a></td>
-						<td>-</td>
-						<td>7/5/2018 4:02 PM</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
-							<button class="resetpass btn btn-sm btn-success">Reset Password</button>
-						</th>
-						<td><a href="#">JaredTuttle</a></td>
-						<td><a href="#">System Administrator</a></td>
-						<td><a href="#">MasterAdmin</a></td>
-						<td>7/4/2018 9:19 PM</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
-							<button class="resetpass btn btn-sm btn-success">Reset Password</button>
-						</th>
-						<td><a href="#">DonaldDuck</a></td>
-						<td><a href="#">Analyst</a></td>
-						<td><a href="#">IsmaellFaridi</a></td>
-						<td>7/5/2018 5:01 PM</td>
-					</tr>
-				</tbody>
-			</table>
-			<br/><br/>
-			
-			<!-- List of all PDFs -->
-			<div class="container">
-				<h2>All</h2>
-				<nav aria-label="nada">
-						<ul class="pagination">
-							<li class="page-item disabled">
-								<a class="page-link" href="#" tabindex="-1">Previous</a>
-							</li>
-							<li class="page-item active">
-								<a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
-							</li>
-							<li class="page-item">
-								<a class="page-link" href="#">2</a>
-							</li>
-							<li class="page-item">
-									<a class="page-link" href="#">3</a>
-								</li>
-							<li class="page-item">
-								<a class="page-link" href="#">Next</a>
-							</li>
-						</ul>
-					</nav>
-			</div>
-			<table class="table table-sm">
-				<thead>
-					<tr>
-						<th scope="col">Action</th>
-						<th scope="col">Username</th>
-						<th scope="col">Profile</th>
-						<th scope="col">Manager</th>
-						<th scope="col">Last Activity Date
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th scope="row">
-							<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
-							<button class="resetpass btn btn-sm btn-success">Reset Password</button>
-						</th>
-						<td><a href="#">DaffyDuck</a></td>
-						<td><a href="#">Analyst</a></td>
-						<td><a href="#">IsmaeelFaridi</a></td>
-						<td>7/5/2018 4:26 PM</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
-							<button class="resetpass btn btn-sm btn-success">Reset Password</button>
-						</th>
-						<td><a href="#">DonaldDuck</a></td>
-						<td><a href="#">Analyst</a></td>
-						<td><a href="#">IsmaeelFaridi</a></td>
-						<td>7/5/2018 4:48 PM</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
-							<button class="resetpass btn btn-sm btn-success">Reset Password</button>
-						</th>
-						<td><a href="#">AbbasManekia</a></td>
-						<td><a href="#">Manager</a></td>
-						<td>-</td>
-						<td>7/5/2018 10:04 PM</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
-							<button class="resetpass btn btn-sm btn-success">Reset Password</button>
-						</th>
-						<td><a href="#">DarkwingDuck</a></td>
-						<td><a href="#">Analyst</a></td>
-						<td><a href="#">AbbasManekia</a></td>
-						<td>7/5/2018 4:48 PM</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
-							<button class="resetpass btn btn-sm btn-success">Reset Password</button>
-						</th>
-						<td><a href="#">AaronRemeniuk</a></td>
-						<td><a href="#">System Administrator</a></td>
-						<td><a href="#">MasterAdmin</a></td>
-						<td>7/5/2018 4:59 PM</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
-							<button class="resetpass btn btn-sm btn-success">Reset Password</button>
-						</th>
-						<td><a href="#">IsmaeelFaridi</a></td>
-						<td><a href="#">Manager</a></td>
-						<td>-</td>
-						<td>7/5/2018 4:02 PM</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
-							<button class="resetpass btn btn-sm btn-success">Reset Password</button>
-						</th>
-						<td><a href="#">JaredTuttle</a></td>
-						<td><a href="#">System Administrator</a></td>
-						<td><a href="#">MasterAdmin</a></td>
-						<td>7/4/2018 9:19 PM</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
-							<button class="resetpass btn btn-sm btn-success">Reset Password</button>
-						</th>
-						<td><a href="#">DonaldDuck</a></td>
-						<td><a href="#">Analyst</a></td>
-						<td><a href="#">IsmaellFaridi</a></td>
-						<td>7/5/2018 5:01 PM</td>
-					</tr>
-				</tbody>
-				
-			</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		
-	
-		<br/><br/><br/>
-		<!-- Jumbotron -->
-		<div class="jumbotron banner">
-		  <h1>Data Transfer Recognition Application®</h1>
-		  <p class="lead"><span class="jumbo-sub"><strong>Use this tool to read a PDF and store its contents.</strong></span></p>
-		  <p><a class="btn btn-lg btn-primary" href="quickstart.html" role="button">Quick Start Guide</a></p>
 		</div>
 
-	  <!-- Site footer -->
-	  <footer class="footer">
-		<p>&copy; JIRAMAT 2018</p>
-	  </footer>
 
-	  	<div class="form-check">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<a href="#">
+			<button type="button" class="btn btn-primary btn-lg">New User</button>
+		</a>
+
+		<br/>
+		<br/>
+
+
+		<!-- Recent Files -->
+		<h2>Recent Users</h2>
+		<table class="table table-sm">
+			<thead>
+				<tr>
+					<th scope="col">Action</th>
+					<th scope="col">Username</th>
+					<th scope="col">Profile</th>
+					<th scope="col">Manager</th>
+					<th scope="col">Last Activity Date</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">
+						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
+					</th>
+					<td>
+						<a href="#">AbbasManekia</a>
+					</td>
+					<td>
+						<a href="#">Manager</a>
+					</td>
+					<td>-</td>
+					<td>7/5/2018 10:04 PM</td>
+				</tr>
+				<tr>
+					<th scope="row">
+						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
+					</th>
+					<td>
+						<a href="#">AaronRemeniuk</a>
+					</td>
+					<td>
+						<a href="#">System Administrator</a>
+					</td>
+					<td>
+						<a href="#">MasterAdmin</a>
+					</td>
+					<td>7/5/2018 4:59 PM</td>
+				</tr>
+				<tr>
+					<th scope="row">
+						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
+					</th>
+					<td>
+						<a href="#">IsmaeelFaridi</a>
+					</td>
+					<td>
+						<a href="#">Manager</a>
+					</td>
+					<td>-</td>
+					<td>7/5/2018 4:02 PM</td>
+				</tr>
+				<tr>
+					<th scope="row">
+						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
+					</th>
+					<td>
+						<a href="#">JaredTuttle</a>
+					</td>
+					<td>
+						<a href="#">System Administrator</a>
+					</td>
+					<td>
+						<a href="#">MasterAdmin</a>
+					</td>
+					<td>7/4/2018 9:19 PM</td>
+				</tr>
+				<tr>
+					<th scope="row">
+						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
+					</th>
+					<td>
+						<a href="#">DonaldDuck</a>
+					</td>
+					<td>
+						<a href="#">Analyst</a>
+					</td>
+					<td>
+						<a href="#">IsmaellFaridi</a>
+					</td>
+					<td>7/5/2018 5:01 PM</td>
+				</tr>
+			</tbody>
+		</table>
+		<br/>
+		<br/>
+
+		<!-- List of all PDFs -->
+		<div class="container">
+			<h2>All</h2>
+			<nav aria-label="nada">
+				<ul class="pagination">
+					<li class="page-item disabled">
+						<a class="page-link" href="#" tabindex="-1">Previous</a>
+					</li>
+					<li class="page-item active">
+						<a class="page-link" href="#">1
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">2</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">3</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">Next</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<table class="table table-sm">
+			<thead>
+				<tr>
+					<th scope="col">Action</th>
+					<th scope="col">Username</th>
+					<th scope="col">Profile</th>
+					<th scope="col">Manager</th>
+					<th scope="col">Last Activity Date
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">
+						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
+					</th>
+					<td>
+						<a href="#">DaffyDuck</a>
+					</td>
+					<td>
+						<a href="#">Analyst</a>
+					</td>
+					<td>
+						<a href="#">IsmaeelFaridi</a>
+					</td>
+					<td>7/5/2018 4:26 PM</td>
+				</tr>
+				<tr>
+					<th scope="row">
+						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
+					</th>
+					<td>
+						<a href="#">DonaldDuck</a>
+					</td>
+					<td>
+						<a href="#">Analyst</a>
+					</td>
+					<td>
+						<a href="#">IsmaeelFaridi</a>
+					</td>
+					<td>7/5/2018 4:48 PM</td>
+				</tr>
+				<tr>
+					<th scope="row">
+						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
+					</th>
+					<td>
+						<a href="#">AbbasManekia</a>
+					</td>
+					<td>
+						<a href="#">Manager</a>
+					</td>
+					<td>-</td>
+					<td>7/5/2018 10:04 PM</td>
+				</tr>
+				<tr>
+					<th scope="row">
+						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
+					</th>
+					<td>
+						<a href="#">DarkwingDuck</a>
+					</td>
+					<td>
+						<a href="#">Analyst</a>
+					</td>
+					<td>
+						<a href="#">AbbasManekia</a>
+					</td>
+					<td>7/5/2018 4:48 PM</td>
+				</tr>
+				<tr>
+					<th scope="row">
+						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
+					</th>
+					<td>
+						<a href="#">AaronRemeniuk</a>
+					</td>
+					<td>
+						<a href="#">System Administrator</a>
+					</td>
+					<td>
+						<a href="#">MasterAdmin</a>
+					</td>
+					<td>7/5/2018 4:59 PM</td>
+				</tr>
+				<tr>
+					<th scope="row">
+						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
+					</th>
+					<td>
+						<a href="#">IsmaeelFaridi</a>
+					</td>
+					<td>
+						<a href="#">Manager</a>
+					</td>
+					<td>-</td>
+					<td>7/5/2018 4:02 PM</td>
+				</tr>
+				<tr>
+					<th scope="row">
+						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
+					</th>
+					<td>
+						<a href="#">JaredTuttle</a>
+					</td>
+					<td>
+						<a href="#">System Administrator</a>
+					</td>
+					<td>
+						<a href="#">MasterAdmin</a>
+					</td>
+					<td>7/4/2018 9:19 PM</td>
+				</tr>
+				<tr>
+					<th scope="row">
+						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
+					</th>
+					<td>
+						<a href="#">DonaldDuck</a>
+					</td>
+					<td>
+						<a href="#">Analyst</a>
+					</td>
+					<td>
+						<a href="#">IsmaellFaridi</a>
+					</td>
+					<td>7/5/2018 5:01 PM</td>
+				</tr>
+			</tbody>
+
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<br/>
+		<br/>
+		<br/>
+		<!-- Jumbotron -->
+		<div class="jumbotron banner">
+			<h1>Data Transfer Recognition Application®</h1>
+			<p class="lead">
+				<span class="jumbo-sub">
+					<strong>Use this tool to read a PDF and store its contents.</strong>
+				</span>
+			</p>
+			<p>
+				<a class="btn btn-lg btn-primary" href="quickstart.html" role="button">Quick Start Guide</a>
+			</p>
+		</div>
+
+		<!-- Site footer -->
+		<footer class="footer">
+			<p>&copy; JIRAMAT 2018</p>
+		</footer>
+
+		<div class="form-check">
 			<input class="form-check-input" type="checkbox" value="1" id="admin-view">
 			<label class="form-check-label" for="admin-view">Admin View</label>
 		</div>
 
-	</div> <!-- /container -->
 	</div>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-	
+	<!-- /container -->
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+	 crossorigin="anonymous"></script>
+
 	<script type="text/javascript">
-		
-		$(function() {
-			$('#login-submit').click(function() {
+
+		$(function () {
+			$('#login-submit').click(function () {
 				$(location).attr('href', 'landing.html');
 			});
-			
-			$('#login-forgot').click(function() {
+
+			$('#login-forgot').click(function () {
 				console.log("Forgot button pushed");
 				alert("What am I, tech support?");
 			});
-			$('#admin-button').click(function() {
+			$('#admin-button').click(function () {
 				alert("You do not have access to this section.");
 			});
-			$("#admin-view").click(function() {
+			$("#admin-view").click(function () {
 				if ($(this).is(':checked')) {
 					$("#admin-nav").removeClass("disabled");
 					$("#ab1").removeClass("btn-secondary");
@@ -326,13 +422,14 @@
 					console.log("admin was un-checked");
 				}
 			});
-			$(".resetpass").click(function() {
+			$(".resetpass").click(function () {
 				alert("Email with password reset instructions has not actually been mailed.");
 			});
 		});
 
-				
-  	</script>
-	
-  </body>
+
+	</script>
+
+</body>
+
 </html>

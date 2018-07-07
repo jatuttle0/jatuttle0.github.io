@@ -1,30 +1,35 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-	
-  	<link rel="stylesheet" href="jiramat.css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+	 crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+	 crossorigin="anonymous"></script>
 
-	
+	<link rel="stylesheet" href="jiramat.css" />
+
+
 
 	<title>JIRAMAT - DTRA®</title>
-  </head>
-  
-  <body>
+</head>
+
+<body>
 	<div class="container">
-		
+
 		<div class="container">
 			<div class="masthead">
 				<nav class="navbar navbar-light bg-faded rounded mb-3">
 					<ul class="nav justify-content-center">
 						<li class="navbar-brand">
-							<a href="landing.html"><img class="nav-link" id="logo" src="https://i.imgur.com/jF6ULfq.png"/></a>
+							<a href="landing.html">
+								<img class="nav-link" id="logo" src="https://i.imgur.com/jF6ULfq.png" />
+							</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="listpdfs.html">PDFs</a>
@@ -38,14 +43,20 @@
 						<li class="nav-item">
 							<a id="admin-nav" class="nav-link disabled" href="admin.html">Admin</a>
 						</li>
+						<li class="nav-item">
+							<a id="btn-logout" class="nav-link" style="color:red;" href="index.html">Logout</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
 		</div>
 
-		<a href="uploadpdf.html"><button type="button" class="btn btn-primary btn-lg">Upload New File</button></a>
+		<a href="uploadpdf.html">
+			<button type="button" class="btn btn-primary btn-lg">Upload New File</button>
+		</a>
 
-		<br/><br/>
+		<br/>
+		<br/>
 
 
 		<!-- Recent Files -->
@@ -63,78 +74,121 @@
 			</thead>
 			<tbody>
 				<tr>
-					<th scope="row"><button id="delrec-1" class="btn btn-sm btn-danger">x</button></th>
-					<td><a href="#">3480762.pdf</a></td>
+					<th scope="row">
+						<button id="delrec-1" class="btn btn-sm btn-danger">x</button>
+					</th>
+					<td>
+						<a href="#">3480762.pdf</a>
+					</td>
 					<td>Pending</td>
-					<td><a href="#">Accounts Ltd.</a></td>
-					<td><a href="#">jtutt</a></td>
+					<td>
+						<a href="#">Accounts Ltd.</a>
+					</td>
+					<td>
+						<a href="#">jtutt</a>
+					</td>
 					<td>7/5/2018 10:04 PM</td>
 				</tr>
-			<tbody>
-				<tr>
-					<th scope="row"><button id="delrec-2" class="btn btn-sm btn-danger">x</button></th>
-					<td><a href="#">9864654.pdf</a></td>
-					<td>Pending</td>
-					<td><a href="#">CompanyCorp</a></td>
-					<td><a href="#">jtutt</a></td>
-					<td>7/5/2018 6:43 PM</td>
-				</tr>
-			</tbody>
-			<tbody>
-				<tr>
-					<th scope="row"><button id="delrec-3" class="btn btn-sm btn-disabled">x</button></th>
-					<td><a href="#">fsd654f.pdf</a></td>
-					<td>Awaiting Upload</td>
-					<td><a href="#">Associated Enterprises</a></td>
-					<td><a href="#">jtutt</a></td>
-					<td>7/5/2018 11:52 AM</td>
-				</tr>
-			</tbody>
-			<tbody>
-				<tr>
-					<th scope="row"><button id="delrec-4" class="btn btn-sm btn-danger">x</button></th>
-					<td><a href="#">as645d4a9s8.pdf</a></td>
-					<td>Complete</td>
-					<td><a href="#">Executives Forever</a></td>
-					<td><a href="#">jtutt</a></td>
-					<td>7/4/2018 1:06 AM</td>
-				</tr>
-			</tbody>
-			<tbody>
-				<tr>
-					<th scope="row"><button id="delrec-5" class="btn btn-sm btn-danger">x</button></th>
-					<td><a href="#">901923843.pdf</a></td>
-					<td>Complete</td>
-					<td><a href="#">CompanyCorp</a></td>
-					<td><a href="#">jtutt</a></td>
-					<td>7/3/2018 4:59 PM</td>
-				</tr>
-			</tbody>
+				<tbody>
+					<tr>
+						<th scope="row">
+							<button id="delrec-2" class="btn btn-sm btn-danger">x</button>
+						</th>
+						<td>
+							<a href="#">9864654.pdf</a>
+						</td>
+						<td>Pending</td>
+						<td>
+							<a href="#">CompanyCorp</a>
+						</td>
+						<td>
+							<a href="#">jtutt</a>
+						</td>
+						<td>7/5/2018 6:43 PM</td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<th scope="row">
+							<button id="delrec-3" class="btn btn-sm btn-disabled">x</button>
+						</th>
+						<td>
+							<a href="#">fsd654f.pdf</a>
+						</td>
+						<td>Awaiting Upload</td>
+						<td>
+							<a href="#">Associated Enterprises</a>
+						</td>
+						<td>
+							<a href="#">jtutt</a>
+						</td>
+						<td>7/5/2018 11:52 AM</td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<th scope="row">
+							<button id="delrec-4" class="btn btn-sm btn-danger">x</button>
+						</th>
+						<td>
+							<a href="#">as645d4a9s8.pdf</a>
+						</td>
+						<td>Complete</td>
+						<td>
+							<a href="#">Executives Forever</a>
+						</td>
+						<td>
+							<a href="#">jtutt</a>
+						</td>
+						<td>7/4/2018 1:06 AM</td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<th scope="row">
+							<button id="delrec-5" class="btn btn-sm btn-danger">x</button>
+						</th>
+						<td>
+							<a href="#">901923843.pdf</a>
+						</td>
+						<td>Complete</td>
+						<td>
+							<a href="#">CompanyCorp</a>
+						</td>
+						<td>
+							<a href="#">jtutt</a>
+						</td>
+						<td>7/3/2018 4:59 PM</td>
+					</tr>
+				</tbody>
 		</table>
-		<br/><br/>
-		
+		<br/>
+		<br/>
+
 		<!-- List of all PDFs -->
 		<div class="container">
 			<h2>All</h2>
 			<nav aria-label="nada">
-					<ul class="pagination">
-						<li class="page-item disabled">
-							<a class="page-link" href="#" tabindex="-1">Previous</a>
-						</li>
-						<li class="page-item active">
-							<a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="page-item">
-							<a class="page-link" href="#">2</a>
-						</li>
-						<li class="page-item">
-								<a class="page-link" href="#">3</a>
-							</li>
-						<li class="page-item">
-							<a class="page-link" href="#">Next</a>
-						</li>
-					</ul>
-				</nav>
+				<ul class="pagination">
+					<li class="page-item disabled">
+						<a class="page-link" href="#" tabindex="-1">Previous</a>
+					</li>
+					<li class="page-item active">
+						<a class="page-link" href="#">1
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">2</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">3</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">Next</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
 		<table class="table table-sm">
 			<thead>
@@ -149,149 +203,242 @@
 			</thead>
 			<tbody>
 				<tr>
-					<th scope="row"><button id="del-1" class="btn btn-sm btn-danger">x</button></th>
-					<td><a href="#">4123098.pdf</a></td>
+					<th scope="row">
+						<button id="del-1" class="btn btn-sm btn-danger">x</button>
+					</th>
+					<td>
+						<a href="#">4123098.pdf</a>
+					</td>
 					<td>Complete</td>
-					<td><a href="#">Accounts Ltd.</a></td>
-					<td><a href="#">jtutt</a></td>
+					<td>
+						<a href="#">Accounts Ltd.</a>
+					</td>
+					<td>
+						<a href="#">jtutt</a>
+					</td>
 					<td>7/1/2018 11:04 AM</td>
 				</tr>
-			<tbody>
-				<tr>
-					<th scope="row"><button id="del-2" class="btn btn-sm btn-danger">x</button></th>
-					<td><a href="#">654468945.pdf</a></td>
-					<td>Complete</td>
-					<td><a href="#">CompanyCorp</a></td>
-					<td><a href="#">jtutt</a></td>
-					<td>1/16/2018 5:13 AM</td>
-				</tr>
-			</tbody>
-			<tbody>
-				<tr>
-					<th scope="row"><button id="del-3" class="btn btn-sm btn-danger">x</button></th>
-					<td><a href="#">1243142456.pdf</a></td>
-					<td>Complete</td>
-					<td><a href="#">Associated Enterprises</a></td>
-					<td><a href="#">jtutt</a></td>
-					<td>1/20/2013 2:45 PM</td>
-				</tr>
-			</tbody>
-			<tbody>
-				<tr>
-					<th scope="row"><button id="del-4" class="btn btn-sm btn-danger">x</button></th>
-					<td><a href="#">25346827453486.pdf</a></td>
-					<td>Complete</td>
-					<td><a href="#">Executives Forever</a></td>
-					<td><a href="#">jtutt</a></td>
-					<td>5/2/2018 4:44 PM</td>
-				</tr>
-			</tbody>
-			<tbody>
-				<tr>
-					<th scope="row"><button id="del-5" class="btn btn-sm btn-danger">x</button></th>
-					<td><a href="#">1323451132.pdf</a></td>
-					<td>Complete</td>
-					<td><a href="#">CompanyCorp</a></td>
-					<td><a href="#">jtutt</a></td>
-					<td>4/22/2018 4:59 PM</td>
-				</tr>
-			</tbody>
-			<tbody>
-				<tr>
-					<th scope="row"><button id="del-6" class="btn btn-sm btn-danger">x</button></th>
-					<td><a href="#">348056671762.pdf</a></td>
-					<td>Complete</td>
-					<td><a href="#">Accounts Ltd.</a></td>
-					<td><a href="#">jtutt</a></td>
-					<td>7/1/2018 11:11 PM</td>
-				</tr>
-			<tbody>
-				<tr>
-					<th scope="row"><button id="del-7" class="btn btn-sm btn-danger">x</button></th>
-					<td><a href="#">986461232154.pdf</a></td>
-					<td>Complete</td>
-					<td><a href="#">CompanyCorp</a></td>
-					<td><a href="#">jtutt</a></td>
-					<td>7/2/2018 6:43 PM</td>
-				</tr>
-			</tbody>
-			<tbody>
-				<tr>
-					<th scope="row"><button id="del-8" class="btn btn-sm btn-danger">x</button></th>
-					<td><a href="#">78973214.pdf</a></td>
-					<td>Complete</td>
-					<td><a href="#">Associated Enterprises</a></td>
-					<td><a href="#">jtutt</a></td>
-					<td>7/4/2018 12:00 PM</td>
-				</tr>
-			</tbody>
-			<tbody>
-				<tr>
-					<th scope="row"><button id="del-9" class="btn btn-sm btn-danger">x</button></th>
-					<td><a href="#">abacus.pdf</a></td>
-					<td>Complete</td>
-					<td><a href="#">Executives Forever</a></td>
-					<td><a href="#">jtutt</a></td>
-					<td>2/29/2018 6:60 AM</td>
-				</tr>
-			</tbody>
-			<tbody>
-				<tr>
-					<th scope="row"><button id="del-10" class="btn btn-sm btn-danger">x</button></th>
-					<td><a href="#">987987987.pdf</a></td>
-					<td>Complete</td>
-					<td><a href="#">CompanyCorp</a></td>
-					<td><a href="#">jtutt</a></td>
-					<td>2/22/2012 8:31 PM</td>
-				</tr>
-			</tbody>
-			
+				<tbody>
+					<tr>
+						<th scope="row">
+							<button id="del-2" class="btn btn-sm btn-danger">x</button>
+						</th>
+						<td>
+							<a href="#">654468945.pdf</a>
+						</td>
+						<td>Complete</td>
+						<td>
+							<a href="#">CompanyCorp</a>
+						</td>
+						<td>
+							<a href="#">jtutt</a>
+						</td>
+						<td>1/16/2018 5:13 AM</td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<th scope="row">
+							<button id="del-3" class="btn btn-sm btn-danger">x</button>
+						</th>
+						<td>
+							<a href="#">1243142456.pdf</a>
+						</td>
+						<td>Complete</td>
+						<td>
+							<a href="#">Associated Enterprises</a>
+						</td>
+						<td>
+							<a href="#">jtutt</a>
+						</td>
+						<td>1/20/2013 2:45 PM</td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<th scope="row">
+							<button id="del-4" class="btn btn-sm btn-danger">x</button>
+						</th>
+						<td>
+							<a href="#">25346827453486.pdf</a>
+						</td>
+						<td>Complete</td>
+						<td>
+							<a href="#">Executives Forever</a>
+						</td>
+						<td>
+							<a href="#">jtutt</a>
+						</td>
+						<td>5/2/2018 4:44 PM</td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<th scope="row">
+							<button id="del-5" class="btn btn-sm btn-danger">x</button>
+						</th>
+						<td>
+							<a href="#">1323451132.pdf</a>
+						</td>
+						<td>Complete</td>
+						<td>
+							<a href="#">CompanyCorp</a>
+						</td>
+						<td>
+							<a href="#">jtutt</a>
+						</td>
+						<td>4/22/2018 4:59 PM</td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<th scope="row">
+							<button id="del-6" class="btn btn-sm btn-danger">x</button>
+						</th>
+						<td>
+							<a href="#">348056671762.pdf</a>
+						</td>
+						<td>Complete</td>
+						<td>
+							<a href="#">Accounts Ltd.</a>
+						</td>
+						<td>
+							<a href="#">jtutt</a>
+						</td>
+						<td>7/1/2018 11:11 PM</td>
+					</tr>
+					<tbody>
+						<tr>
+							<th scope="row">
+								<button id="del-7" class="btn btn-sm btn-danger">x</button>
+							</th>
+							<td>
+								<a href="#">986461232154.pdf</a>
+							</td>
+							<td>Complete</td>
+							<td>
+								<a href="#">CompanyCorp</a>
+							</td>
+							<td>
+								<a href="#">jtutt</a>
+							</td>
+							<td>7/2/2018 6:43 PM</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<th scope="row">
+								<button id="del-8" class="btn btn-sm btn-danger">x</button>
+							</th>
+							<td>
+								<a href="#">78973214.pdf</a>
+							</td>
+							<td>Complete</td>
+							<td>
+								<a href="#">Associated Enterprises</a>
+							</td>
+							<td>
+								<a href="#">jtutt</a>
+							</td>
+							<td>7/4/2018 12:00 PM</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<th scope="row">
+								<button id="del-9" class="btn btn-sm btn-danger">x</button>
+							</th>
+							<td>
+								<a href="#">abacus.pdf</a>
+							</td>
+							<td>Complete</td>
+							<td>
+								<a href="#">Executives Forever</a>
+							</td>
+							<td>
+								<a href="#">jtutt</a>
+							</td>
+							<td>2/29/2018 6:60 AM</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<th scope="row">
+								<button id="del-10" class="btn btn-sm btn-danger">x</button>
+							</th>
+							<td>
+								<a href="#">987987987.pdf</a>
+							</td>
+							<td>Complete</td>
+							<td>
+								<a href="#">CompanyCorp</a>
+							</td>
+							<td>
+								<a href="#">jtutt</a>
+							</td>
+							<td>2/22/2012 8:31 PM</td>
+						</tr>
+					</tbody>
+
 		</table>
-		
+
 		<!-- Text about what you're doing -->
 
-		
-	
+
+
 
 		<!-- Jumbotron -->
-		<br/><br/><br/><br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
 		<div class="jumbotron banner">
-		  <h1>Data Transfer Recognition Application®</h1>
-		  <p class="lead"><span class="jumbo-sub"><strong>Use this tool to read a PDF and store its contents.</strong></span></p>
-		  <p><a class="btn btn-lg btn-primary" href="quickstart.html" role="button">Quick Start Guide</a></p>
+			<h1>Data Transfer Recognition Application®</h1>
+			<p class="lead">
+				<span class="jumbo-sub">
+					<strong>Use this tool to read a PDF and store its contents.</strong>
+				</span>
+			</p>
+			<p>
+				<a class="btn btn-lg btn-primary" href="quickstart.html" role="button">Quick Start Guide</a>
+			</p>
 		</div>
 
-	  <!-- Site footer -->
-	  <footer class="footer">
-		<p>&copy; JIRAMAT 2018</p>
-	  </footer>
+		<!-- Site footer -->
+		<footer class="footer">
+			<p>&copy; JIRAMAT 2018</p>
+		</footer>
 
-	  	<div class="form-check">
+		<div class="form-check">
 			<input class="form-check-input" type="checkbox" value="1" id="admin-view">
 			<label class="form-check-label" for="admin-view">Admin View</label>
 		</div>
 
-	</div> <!-- /container -->
 	</div>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-	
+	<!-- /container -->
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+	 crossorigin="anonymous"></script>
+
 	<script type="text/javascript">
-		
-		$(function() {
-			$('#login-submit').click(function() {
+
+		$(function () {
+			$('#login-submit').click(function () {
 				$(location).attr('href', 'landing.html');
 			});
-			
-			$('#login-forgot').click(function() {
+
+			$('#login-forgot').click(function () {
 				console.log("Forgot button pushed");
 				alert("What am I, tech support?");
 			});
-			$('#admin-button').click(function() {
+			$('#admin-button').click(function () {
 				alert("You do not have access to this section.");
 			});
-			$("#admin-view").click(function() {
+			$("#admin-view").click(function () {
 				if ($(this).is(':checked')) {
 					$("#admin-nav").removeClass("disabled");
 					$("#ab1").removeClass("btn-secondary");
@@ -310,8 +457,9 @@
 			});
 		});
 
-				
-  	</script>
-	
-  </body>
+
+	</script>
+
+</body>
+
 </html>

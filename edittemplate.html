@@ -35,7 +35,10 @@
 							<a class="nav-link" href="reports.html">Reports</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link disabled" id="admin-nav" href="admin.html">Admin</a>
+							<a id="admin-nav" class="nav-link disabled" href="admin.html">Admin</a>
+						</li>
+						<li class="nav-item">
+							<a id="btn-logout" class="nav-link" style="color:red;" href="index.html">Logout</a>
 						</li>
 					</ul>
 				</nav>
@@ -142,7 +145,7 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item dropdown">
-						<button type="button" class="btn btn-success btn-lg" id="btn-apply">Apply Template</button>	
+						<button type="button" class="btn btn-success btn-lg" id="btn-apply">Apply Template</button>
 					</li>
 				</ul>
 			</div>
@@ -215,10 +218,10 @@
 			$("#btn-upload").click(function () {
 				alert("Button Clicked");
 			});
-			$("#btn-apply").click(function() {
+			$("#btn-apply").click(function () {
 				$(location).attr('href', 'applytemplate.html');
 			})
-			$(".btn-templatemenu").click(function() {
+			$(".btn-templatemenu").click(function () {
 				$(location).attr('href', 'templates.html');
 			});
 

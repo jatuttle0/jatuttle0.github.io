@@ -111,14 +111,14 @@
 							Template
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">New Template...</a>
-							<a class="dropdown-item" href="#">Custom Templates...</a>
-							<a class="dropdown-item" href="#">Generic Templates</a>
+							<a class="dropdown-item btn-templatemenu" href="#">New Template...</a>
+							<a class="dropdown-item btn-templatemenu" href="#">Custom Templates...</a>
+							<a class="dropdown-item btn-templatemenu" href="#">Generic Templates</a>
 							<ul>
-								<a class="dropdown-item" href="#">Generic Invoice</a>
-								<a class="dropdown-item" href="#">Generic Contract</a>
-								<a class="dropdown-item" href="#">Generic Notice</a>
-								<a class="dropdown-item" href="#">Generic Other...</a>
+								<a class="dropdown-item btn-templatemenu" href="#">Generic Invoice</a>
+								<a class="dropdown-item btn-templatemenu" href="#">Generic Contract</a>
+								<a class="dropdown-item btn-templatemenu" href="#">Generic Notice</a>
+								<a class="dropdown-item btn-templatemenu" href="#">Generic Other...</a>
 							</ul>
 						</div>
 					</li>
@@ -218,6 +218,9 @@
 			$("#btn-apply").click(function() {
 				$(location).attr('href', 'applytemplate.html');
 			})
+			$(".btn-templatemenu").click(function() {
+				$(location).attr('href', 'templates.html');
+			});
 
 		});
 

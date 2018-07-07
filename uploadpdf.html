@@ -100,7 +100,7 @@
 						Click close to continue.
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn-modal-close">Close</button>
 					</div>
 				</div>
 			</div>
@@ -168,6 +168,9 @@
 			});
 			$("#btn-back").click(function() {
 				window.history.back();
+			});
+			$("#btn-modal-close").click(function() {
+				$(location).attr('href', 'edittemplate.html');
 			});
 
 		});

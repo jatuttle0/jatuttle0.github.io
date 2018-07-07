@@ -425,6 +425,9 @@
 			$(".resetpass").click(function () {
 				alert("Email with password reset instructions has not actually been mailed.");
 			});
+			$("#btn-logout").click(function() {
+				$(location).attr('href', 'index.html');
+			});
 		});
 
 

@@ -157,7 +157,10 @@
 			$(".btn-disabled").click(function () {
 				preventDefault();
 				alert("You do not have access to this section.");
-			})
+			});
+			$("#btn-logout").click(function() {
+				$(location).attr('href', 'index.html');
+			});
 		});
 
 

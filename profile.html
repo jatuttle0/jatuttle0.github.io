@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="jiramat.css" />
+
+
+
+    <title>JIRAMAT - DTRA®</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="container">
+            <div class="masthead">
+                <nav class="navbar navbar-light bg-faded rounded mb-3">
+                    <ul class="nav justify-content-center">
+                        <li class="navbar-brand">
+                            <a href="landing.html">
+                                <img class="nav-link" id="logo" src="https://i.imgur.com/jF6ULfq.png" />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="listpdfs.html">PDFs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="templates.html">Templates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reports.html">Reports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="admin-nav" class="nav-link disabled" href="admin.html">Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="btn-logout" class="nav-link" style="color:red;" href="index.html">Logout</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <a href="#">
+            <button type="button" class="btn btn-primary btn-lg" target="#modal" data-toggle="modal" data-target="#theModal">New Profile</button>
+        </a>
+
+        <br/>
+        <br/>
+
+
+        <!-- Recent Files -->
+        <h2>Profiles</h2>
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th scope="col">Action</th>
+                    <th scope="col">Active</th>
+                    <th scope="col">Profile Name</th>
+                    <th scope="col">Users Assigned</th>
+                    <th scope="col">Created By</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">
+                        <button id="deactivate1" class="btn btn-sm btn-danger deactivate">Deactivate</button>
+                    </th>
+                    <td>
+                        <span id="ck1">&#9989;</span>
+                    </td>
+                    <td>
+                        <a class="userprofile" href="#">Analyst</a>
+                    </td>
+                    <td>77</td>
+                    <td>
+                        <a href="#">MasterAdmin</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <button id="deactivate2" class="btn btn-sm btn-danger deactivate">Deactivate</button>
+                    </th>
+                    <td>
+                        <span id="ck2">&#9989;</span>
+                    </td>
+                    <td>
+                        <a class="userprofile" href="#">Manager</a>
+                    </td>
+                    <td>9</td>
+                    <td>
+                        <a href="#">MasterAdmin</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <button id="deactivate3" class="btn btn-sm btn-danger deactivate">Deactivate</button>
+                    </th>
+                    <td>
+                        <span id="ck3">&#9989;</span>
+                    </td>
+                    <td>
+                        <a class="userprofile" href="#">Administrator</a>
+                    </td>
+                    <td>4</td>
+                    <td>
+                        <a href="#">MasterAdmin</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="theModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Create New Profile</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="username">Profile Name</label>
+                                <input type="text" class="form-control" id="in-username">
+                                <hr/>
+
+                                <h3>PDFs</h3>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Read</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Create</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Update</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Delete</label>
+                                </div>
+
+                                <h3>Templates</h3>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Read</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Create</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Update</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Delete</label>
+                                </div>
+
+                                <h3>Reports</h3>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Read</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Create</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Update</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Delete</label>
+                                </div>
+
+                                <h3>Users</h3>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Read</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Create</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Update</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Delete</label>
+                                </div>
+
+
+                                <h3>Profiles</h3>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Read</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Create</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Update</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Delete</label>
+                                </div>
+
+                                <hr/>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="btn-profile">Select Controlling Profile
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Analyst</a>
+                                    <a class="dropdown-item" href="#">Manager</a>
+                                    <a class="dropdown-item" href="#">Administrator</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn-modal-close">Create</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <br/>
+        <br/>
+        <br/>
+        <!-- Jumbotron -->
+        <div class="jumbotron banner">
+            <h1>Data Transfer Recognition Application®</h1>
+            <p class="lead">
+                <span class="jumbo-sub">
+                    <strong>Use this tool to read a PDF and store its contents.</strong>
+                </span>
+            </p>
+            <p>
+                <a class="btn btn-lg btn-primary" href="quickstart.html" role="button">Quick Start Guide</a>
+            </p>
+        </div>
+
+        <!-- Site footer -->
+        <footer class="footer">
+            <p>&copy; JIRAMAT 2018</p>
+        </footer>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="1" id="admin-view">
+            <label class="form-check-label" for="admin-view">Admin View</label>
+        </div>
+
+    </div>
+    <!-- /container -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            $('#login-submit').click(function () {
+                $(location).attr('href', 'landing.html');
+            });
+
+            $('#login-forgot').click(function () {
+                console.log("Forgot button pushed");
+                alert("What am I, tech support?");
+            });
+            $('#admin-button').click(function () {
+                alert("You do not have access to this section.");
+            });
+            $("#admin-view").click(function () {
+                if ($(this).is(':checked')) {
+                    $("#admin-nav").removeClass("disabled");
+                    $("#ab1").removeClass("btn-secondary");
+                    $("#ab2").removeClass("btn-secondary");
+                    $("#ab1").addClass("btn-primary");
+                    $("#ab2").addClass("btn-primary");
+                    console.log("admin was checked");
+                } else {
+                    $("#admin-nav").addClass("disabled");
+                    $("#ab1").removeClass("btn-primary");
+                    $("#ab2").removeClass("btn-primary");
+                    $("#ab1").addClass("btn-secondary");
+                    $("#ab2").addClass("btn-secondary");
+                    console.log("admin was un-checked");
+                }
+            });
+            $(".resetpass").click(function () {
+                alert("Email with password reset instructions has been sent to the user.");
+            });
+            $("#btn-logout").click(function () {
+                $(location).attr('href', 'index.html');
+            });
+            $(".deactivate").click(function () {
+                if ($(this).hasClass("btn-disabled")) {
+                    alert("User has been activated");
+                    $(this).html("Deactivate");
+                } else {
+                    alert("Profile has been deactivated");
+                    $(this).html("Activate");
+                }
+                $(this).toggleClass("btn-danger");
+                $(this).toggleClass("btn-disabled");
+            });
+            $(".dropdown-item").click(function () {
+                $("#btn-profile").html($(this).html() + "<span class='sr-only'>Toggle Dropdown</span>");
+            });
+            $("#btn-modal-close").click(function () {
+                alert("Profile has been created.");
+            });
+            $("#deactivate1").click(function () {
+                $("#ck1").toggleClass("hideme");
+            });
+            $("#deactivate2").click(function () {
+                $("#ck2").toggleClass("hideme");
+            });
+            $("#deactivate3").click(function () {
+                $("#ck3").toggleClass("hideme");
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>

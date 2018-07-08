@@ -100,7 +100,7 @@
 						<a href="#">AbbasManekia</a>
 					</td>
 					<td>
-						<a href="#">Manager</a>
+						<a class="userprofile" href="#">Manager</a>
 					</td>
 					<td>-</td>
 					<td>7/5/2018 10:04 PM</td>
@@ -504,8 +504,8 @@
 			$(".dropdown-item").click(function () {
 				$("#btn-profile").html($(this).html() + "<span class='sr-only'>Toggle Dropdown</span>");
 			});
-			$("#btn-modal-close").click(function() {
-				alert("User has been sent an email with first login instructions.");
+			$("#btn-modal-close").click(function () {
+				alert("User has been emailed instructions for first login.");
 			});
 		});
 

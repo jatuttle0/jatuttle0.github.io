@@ -71,7 +71,7 @@
 
 
 		<a href="#">
-			<button type="button" class="btn btn-primary btn-lg">New User</button>
+			<button type="button" class="btn btn-primary btn-lg" target="#modal" data-toggle="modal" data-target="#theModal">New User</button>
 		</a>
 
 		<br/>
@@ -93,7 +93,7 @@
 			<tbody>
 				<tr>
 					<th scope="row">
-						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button id="delrec-1" class="btn btn-sm btn-danger deactivate">Deactivate</button>
 						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
 					</th>
 					<td>
@@ -107,7 +107,7 @@
 				</tr>
 				<tr>
 					<th scope="row">
-						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button id="delrec-1" class="btn btn-sm btn-danger deactivate">Deactivate</button>
 						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
 					</th>
 					<td>
@@ -123,7 +123,7 @@
 				</tr>
 				<tr>
 					<th scope="row">
-						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button id="delrec-1" class="btn btn-sm btn-danger deactivate">Deactivate</button>
 						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
 					</th>
 					<td>
@@ -137,7 +137,7 @@
 				</tr>
 				<tr>
 					<th scope="row">
-						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button id="delrec-1" class="btn btn-sm btn-danger deactivate">Deactivate</button>
 						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
 					</th>
 					<td>
@@ -153,7 +153,7 @@
 				</tr>
 				<tr>
 					<th scope="row">
-						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button id="delrec-1" class="btn btn-sm btn-disabled deactivate">Activate</button>
 						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
 					</th>
 					<td>
@@ -210,7 +210,7 @@
 			<tbody>
 				<tr>
 					<th scope="row">
-						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button id="delrec-1" class="btn btn-sm btn-danger deactivate">Deactivate</button>
 						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
 					</th>
 					<td>
@@ -226,7 +226,7 @@
 				</tr>
 				<tr>
 					<th scope="row">
-						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button id="delrec-1" class="btn btn-sm btn-danger deactivate">Deactivate</button>
 						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
 					</th>
 					<td>
@@ -242,7 +242,7 @@
 				</tr>
 				<tr>
 					<th scope="row">
-						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button id="delrec-1" class="btn btn-sm btn-danger deactivate">Deactivate</button>
 						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
 					</th>
 					<td>
@@ -256,7 +256,7 @@
 				</tr>
 				<tr>
 					<th scope="row">
-						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button id="delrec-1" class="btn btn-sm btn-danger deactivate">Deactivate</button>
 						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
 					</th>
 					<td>
@@ -272,7 +272,7 @@
 				</tr>
 				<tr>
 					<th scope="row">
-						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button id="delrec-1" class="btn btn-sm btn-danger deactivate">Deactivate</button>
 						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
 					</th>
 					<td>
@@ -288,7 +288,7 @@
 				</tr>
 				<tr>
 					<th scope="row">
-						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button id="delrec-1" class="btn btn-sm btn-danger deactivate">Deactivate</button>
 						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
 					</th>
 					<td>
@@ -302,7 +302,7 @@
 				</tr>
 				<tr>
 					<th scope="row">
-						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button id="delrec-1" class="btn btn-sm btn-danger deactivate">Deactivate</button>
 						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
 					</th>
 					<td>
@@ -318,7 +318,7 @@
 				</tr>
 				<tr>
 					<th scope="row">
-						<button id="delrec-1" class="btn btn-sm btn-danger">Deactivate</button>
+						<button id="delrec-1" class="btn btn-sm btn-danger deactivate">Deactivate</button>
 						<button class="resetpass btn btn-sm btn-success">Reset Password</button>
 					</th>
 					<td>
@@ -335,6 +335,64 @@
 			</tbody>
 
 		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Modal -->
+		<div class="modal fade" id="theModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Create New User</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="username">Username</label>
+								<input type="text" class="form-control" id="in-username" placeholder="FirstNameLastName">
+							</div>
+							<div class="form-group">
+								<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="btn-profile">Select Profile
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Analyst</a>
+									<a class="dropdown-item" href="#">Manager</a>
+									<a class="dropdown-item" href="#">Administrator</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn-modal-close">Create</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
 
 
 
@@ -423,10 +481,24 @@
 				}
 			});
 			$(".resetpass").click(function () {
-				alert("Email with password reset instructions has not actually been mailed.");
+				alert("Email with password reset instructions has been sent to the user.");
 			});
-			$("#btn-logout").click(function() {
+			$("#btn-logout").click(function () {
 				$(location).attr('href', 'index.html');
+			});
+			$(".deactivate").click(function () {
+				if ($(this).hasClass("btn-disabled")) {
+					alert("User has been activated");
+					$(this).html("Deactivate");
+				} else {
+					alert("User has been deactivated");
+					$(this).html("Activate");
+				}
+				$(this).toggleClass("btn-danger");
+				$(this).toggleClass("btn-disabled");
+			});
+			$(".dropdown-item").click(function() {
+				alert("profile clicked, need to implement dynamic assignment");
 			});
 		});
 

@@ -330,7 +330,7 @@
                         <a href="listpdfs.html">
                             <button type="button" class="btn btn-success" data-dismiss="modal" id="btn-modal-close">Save</button>
                         </a>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn-modal-close">Back</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn-modal-back">Back</button>
                     </div>
                 </div>
             </div>
@@ -417,6 +417,9 @@
 			});
             $(".delrec").click(function() {
                 $(this).closest('tr').remove();
+            });
+            $("#btn-modal-close").click(function() {
+                alert("Saved Successfully");
             });
 
         });

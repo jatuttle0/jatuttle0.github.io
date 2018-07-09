@@ -53,92 +53,40 @@
 
 
 
-		<!-- Recent Reports -->
-		<a href="uploadreport.html"><button id="btn-newreport" class="btn btn-primary" type="button">New Report</button></a>
-		<h2>Recent Reports</h2>
-		<table class="table table-sm">
-			<thead>
-				<tr>
-					<th scope="col">Action</th>
-					<th scope="col">Scheduled</th>
-					<th scope="col">Report Name</th>
-					<th scope="col">Owner</th>
-					<th scope="col">Last Modified</th>
-				</tr>
-			</thead>
-			<tbody>
+		<!-- Input new PDF -->
+		<div class="input-group mb-3">
+			<button class="btn btn-secondary input-group-prepend" id="btn-back" type="button">Back</button>
 
-				<tr>
-					<th scope="row">
-						<button id="delrec-1" class="btn btn-sm btn-danger">x</button>
-						<button id="schrec-1" class="btn btn-sm btn-warning">Schedule</button>
-					</th>
-					<td> </td>
-					<td>
-						<a href="Jiramat Customer Listpdf.pdf">Customer List</a>
-					</td>
-					<td>
-						<a href="#">ifaridi</a>
-					</td>
-					<td>7/8/2018 1:51 PM</td>
+			<div class="custom-file">
+				<input type="file" class="custom-file-input" id="form-pdf">
+				<label class="custom-file-label" for="form-pdf">Choose Report To Upload</label>
+			</div>
+			<div class="input-group-append">
+				<button id="btn-upload" class="btn btn-outline-primary input-group-append" type="button" target="#modal" data-toggle="modal" data-target="#theModal">Upload</button>
+			</div>
+		</div>
 
-				</tr>
+		<!-- Text about what you're doing -->
 
-				<tr>
-					<th scope="row">
-						<button id="delrec-1" class="btn btn-sm btn-danger">x</button>
-						<button id="schrec-1" class="btn btn-sm btn-warning">Schedule</button>
-					</th>
-					<td> </td>
-					<td>
-						<a href="#">Manager Dashboard</a>
-					</td>
-					<td>
-						<a href="#">amanes</a>
-					</td>
-					<td>7/4/2018 3:45 PM</td>
-
-				</tr>
-
-				<tr>
-					<th scope="row">
-						<button id="delrec-1" class="btn btn-sm btn-danger">x</button>
-						<button id="schrec-1" class="btn btn-sm btn-warning">Schedule</button>
-					</th>
-					<td>&#9989;</td>
-					<td>
-						<a href="#">System Performance</a>
-					</td>
-					<td>
-						<a href="#">Administrator</a>
-					</td>
-					<td>7/2/2018 8:55 AM</td>
-
-				</tr>
-
-
-				<tr>
-					<th scope="row">
-						<button id="delrec-1" class="btn btn-sm btn-danger">x</button>
-						<button id="schrec-1" class="btn btn-sm btn-warning">Schedule</button>
-					</th>
-					<td>&#9989;</td>
-					<td>
-						<a href="#">User Adoption</a>
-					</td>
-					<td>
-						<a href="#">amanes</a>
-					</td>
-					<td>6/1/2018 1:33 PM</td>
-
-				</tr>
-			</tbody>
-		</table>
-		<br/>
-		<br/>
-
-		<!-- List of all PDFs -->
-
+		<!-- Modal -->
+		<div class="modal fade" id="theModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Upload Successful</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Click close to continue.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn-modal-close">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 
@@ -207,9 +155,19 @@
 					console.log("admin was un-checked");
 				}
 			});
-			$("#btn-logout").click(function () {
+			$(".dropdown-item").click(function () {
+				$("#drop-type").html($(this).html());
+			});
+			$("#btn-back").click(function () {
+				window.history.back();
+			});
+			$("#btn-modal-close").click(function () {
+				$(location).attr('href', 'edittemplate.html');
+			});
+			$("#btn-logout").click(function() {
 				$(location).attr('href', 'index.html');
 			});
+
 		});
 
 

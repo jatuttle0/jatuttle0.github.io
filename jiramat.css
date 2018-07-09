@@ -41,3 +41,11 @@ html, body {
 .hideme {
     display:none;
 }
+.btn-outline-primary {
+    width: 200px;
+}
+.dropdown-menu {
+    width: 200px;
+    border-width: 2px;
+    border-color: gray;
+}

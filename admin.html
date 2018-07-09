@@ -592,11 +592,30 @@
 				$(this).toggleClass("btn-danger");
 				$(this).toggleClass("btn-disabled");
 			});
-			$(".dropdown-item").click(function () {
-				alert($(this).parent().siblings().html());
-			});
 			$("#btn-modal-close").click(function () {
 				alert("User has been emailed instructions for first login.");
+			});
+			$(".dropdown-item").click(function () {
+				var oldString = "";
+				var newString = "";
+				var arrowString = "<span class='sr-only'>Toggle Dropdown</span>";
+
+				if ($(this).parent().prev().html().includes("Manager")) {
+					oldString = "Manager";
+				} else if ($(this).parent().prev().html().includes("Administrator")) {
+					oldString = "Administrator";
+				} else {
+					oldString = "Analyst";
+				}
+
+				if ($(this).html().includes("Manager")) {
+					newString = "Manager";
+				} else if ($(this).html().includes("Administrator")) {
+					newString = "Administrator"
+				} else {
+					newString = "Analyst"
+				}
+				$(this).parent().prev().html($(this).parent().prev().html().replace(oldString, newString));
 			});
 		});
 

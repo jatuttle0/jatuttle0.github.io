@@ -58,6 +58,7 @@
             <h2>Data Discovered from Invoice</h2>
             <button id="btn-upload" class="btn btn-success btn-lg" style="margin-bottom: 10px;" type="button" target="#modal" data-toggle="modal"
                 data-target="#theModal">Save</button>
+            <a href="https://docs.google.com/spreadsheets/d/16rdspc8_PaK8Tjo2smUIn3JI6_7QT2w6kdYvTuCvWg8/edit?ts=5b40fcd2#gid=0"><button id="btn-edit" class="btn btn-primary btn-lg" style="margin-bottom: 10px;" type="button" >Edit in Google Sheets</button></a>
         </div>
         <table class="table table-sm">
             <thead>
@@ -412,13 +413,13 @@
             $("#editpdf").click(function () {
                 $(location).attr('href', 'edittemplate.html');
             });
-            $("#btn-logout").click(function() {
-				$(location).attr('href', 'index.html');
-			});
-            $(".delrec").click(function() {
+            $("#btn-logout").click(function () {
+                $(location).attr('href', 'index.html');
+            });
+            $(".delrec").click(function () {
                 $(this).closest('tr').remove();
             });
-            $("#btn-modal-close").click(function() {
+            $("#btn-modal-close").click(function () {
                 alert("Saved Successfully");
             });
 
